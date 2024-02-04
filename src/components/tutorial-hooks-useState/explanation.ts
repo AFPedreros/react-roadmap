@@ -1,6 +1,4 @@
-const step1 = `//counter.tsx
-
-export default function App() {
+const step1 = `export default function App() {
     return (
       <div className="flex flex-col w-full gap-y-2">
 			<h2>Contador:</h2>
@@ -9,8 +7,7 @@ export default function App() {
 }
 `;
 
-const step2 = `//counter.tsx
-import { useState } from 'react';
+const step2 = `import { useState } from 'react';
 
 export default function App() {
   const [count, setCount] = useState(0);

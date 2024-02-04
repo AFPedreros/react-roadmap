@@ -7,7 +7,7 @@ import { CodeBlock } from '@/components/code-block';
 export default function App() {
 	return (
 		<div className="grid grid-cols-12 ">
-			<div className="relative z-10 hidden pr-4 mt-8 overflow-visible lg:col-span-2 lg:block"></div>
+			<div className="relative z-10 mt-8 hidden overflow-visible pr-4 lg:col-span-2 lg:block"></div>
 			<div className="z-50 col-span-12 mt-10 lg:col-span-10 lg:px-16 xl:col-span-8">
 				<div className="w-full space-y-6">
 					<Title>
@@ -23,7 +23,7 @@ export default function App() {
 							</div>
 						</Tab>
 						<Tab
-							className="flex justify-center w-full max-w-screen-md"
+							className="flex w-full max-w-screen-md justify-center"
 							key="example"
 							title="Ejemplo"
 						>
@@ -33,7 +33,7 @@ export default function App() {
 					</Tabs>
 				</div>
 			</div>
-			<div className="z-10 hidden pl-4 mt-8 xl:col-span-2 xl:flex"></div>
+			<div className="z-10 mt-8 hidden pl-4 xl:col-span-2 xl:flex"></div>
 		</div>
 	);
 }
