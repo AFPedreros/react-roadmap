@@ -19,11 +19,7 @@ export function CodeBlock({ code, copy }: CodeBlockProps) {
 					</div>
 					<pre className="pb-4">
 						{tokens.map((line, i) => (
-							<div
-								className={cn(i === 2 ? 'bg-secondary/25' : '', 'relative px-4')}
-								key={i}
-								// {...getLineProps({ line })}
-							>
+							<div className={cn(i === 2 ? 'bg-secondary/25' : '', 'relative px-4')} key={i}>
 								{i === 2 && <div className=" absolute left-0 h-full w-1 bg-secondary" />}
 								<span className="mr-2">{i + 1}</span>
 								{line.map((token, key) => (
